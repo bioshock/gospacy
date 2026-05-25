@@ -15,7 +15,7 @@ type ArcReport struct {
 // ArcDisagreement records one token's head or label mismatch in a dep-parse
 // comparison, with both the expected and actual head index and label.
 type ArcDisagreement struct {
-	Index    int    // token index
+	Index    int // token index
 	WantHead int
 	GotHead  int
 	WantDep  string

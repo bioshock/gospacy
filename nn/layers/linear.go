@@ -11,11 +11,14 @@ import (
 // Linear is an affine projection: Y = X @ W.T + b.
 //
 // Inputs:
-//   nO: output dim (Y.Cols)
-//   nI: input dim  (X.Cols)
+//
+//	nO: output dim (Y.Cols)
+//	nI: input dim  (X.Cols)
+//
 // Params (populated by FromBytes):
-//   W: shape (nO, nI) row-major
-//   b: shape (nO,)
+//
+//	W: shape (nO, nI) row-major
+//	b: shape (nO,)
 func Linear(ops nn.Ops, nO, nI int) *nn.Model {
 	return &nn.Model{
 		Name:   "linear",

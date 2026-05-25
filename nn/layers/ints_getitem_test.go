@@ -14,8 +14,8 @@ func TestIntsGetitem_ColumnSlice(t *testing.T) {
 	b, err := os.ReadFile(goldenPath(t, "ints_getitem.json"))
 	require.NoError(t, err)
 	var g struct {
-		Dims   map[string]int `json:"dims"`
-		Input  struct {
+		Dims  map[string]int `json:"dims"`
+		Input struct {
 			Shape []int    `json:"shape"`
 			Data  []uint64 `json:"data"`
 		} `json:"input"`

@@ -9,6 +9,7 @@ import (
 // At each index, equality holds if either:
 //   - |want - got| <= AbsMax (absolute tolerance, used near zero), OR
 //   - |want - got| / |want| <= RelMax (relative tolerance, used far from zero)
+//
 // Set RelMax = 0 to disable relative checking.
 type Tolerance struct {
 	AbsMax float32
@@ -17,12 +18,12 @@ type Tolerance struct {
 
 // NumericReport summarises a float-array comparison.
 type NumericReport struct {
-	LengthMismatch    string  // non-empty if lengths differ; describes "want N got M"
-	HasNaN            bool    // any NaN in either array (always a failure)
-	FirstDisagreeIdx  int     // -1 if equal, else index of first failure
-	MaxAbsDiff        float32 // max |want[i]-got[i]| over all i
-	MaxRelDiff        float32 // max |want[i]-got[i]| / |want[i]| over indices where want[i] != 0
-	MeanAbsDiff       float32 // mean |want[i]-got[i]| over all i
+	LengthMismatch   string  // non-empty if lengths differ; describes "want N got M"
+	HasNaN           bool    // any NaN in either array (always a failure)
+	FirstDisagreeIdx int     // -1 if equal, else index of first failure
+	MaxAbsDiff       float32 // max |want[i]-got[i]| over all i
+	MaxRelDiff       float32 // max |want[i]-got[i]| / |want[i]| over indices where want[i] != 0
+	MeanAbsDiff      float32 // mean |want[i]-got[i]| over all i
 }
 
 // Equal reports whether the comparison found no length mismatch, no NaNs, and

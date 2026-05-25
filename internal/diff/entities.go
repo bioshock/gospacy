@@ -2,11 +2,11 @@ package diff
 
 // EntityReport summarises NER disagreement plus standard P/R/F1 (exact-span match).
 type EntityReport struct {
-	Missing      []Entity // in want but not in got (false negatives)
-	Spurious     []Entity // in got but not in want (false positives)
-	Precision    float64
-	Recall       float64
-	F1           float64
+	Missing   []Entity // in want but not in got (false negatives)
+	Spurious  []Entity // in got but not in want (false positives)
+	Precision float64
+	Recall    float64
+	F1        float64
 }
 
 // Equal reports whether the comparison found no missing or spurious entities
@@ -19,9 +19,10 @@ func (r EntityReport) Equal() bool {
 // (Start, End, Label). Ignores the Text field (which is derivable).
 //
 // Definitions:
-//   Precision = TP / (TP + FP); if no predictions, P = 1.0 (avoid NaN)
-//   Recall    = TP / (TP + FN); if no gold,         R = 1.0
-//   F1        = 2PR/(P+R); if both 0, F1 = 0
+//
+//	Precision = TP / (TP + FP); if no predictions, P = 1.0 (avoid NaN)
+//	Recall    = TP / (TP + FN); if no gold,         R = 1.0
+//	F1        = 2PR/(P+R); if both 0, F1 = 0
 func CompareEntities(want, got []Entity) EntityReport {
 	var r EntityReport
 	wantSet := make(map[Entity]bool, len(want))
