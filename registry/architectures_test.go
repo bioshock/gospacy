@@ -10,9 +10,9 @@ import (
 
 func TestMultiHashEmbedV2_BuildsSixColumnTree(t *testing.T) {
 	cfg := map[string]any{
-		"width": int64(96),
-		"attrs": []any{"NORM", "PREFIX", "SUFFIX", "SHAPE", "SPACY", "IS_SPACE"},
-		"rows":  []any{int64(5000), int64(1000), int64(2500), int64(2500), int64(50), int64(50)},
+		"width":                  int64(96),
+		"attrs":                  []any{"NORM", "PREFIX", "SUFFIX", "SHAPE", "SPACY", "IS_SPACE"},
+		"rows":                   []any{int64(5000), int64(1000), int64(2500), int64(2500), int64(50), int64(50)},
 		"include_static_vectors": false,
 	}
 	m, err := registry.Build("spacy.MultiHashEmbed.v2", cfg)
@@ -242,8 +242,8 @@ func TestTok2VecV2_Builds65NodeTreeForEnCoreWebSm(t *testing.T) {
 	cfg := map[string]any{
 		"width": int64(96),
 		// MultiHashEmbed sub-cfg
-		"attrs": []any{"NORM", "PREFIX", "SUFFIX", "SHAPE", "SPACY", "IS_SPACE"},
-		"rows":  []any{int64(5000), int64(1000), int64(2500), int64(2500), int64(50), int64(50)},
+		"attrs":                  []any{"NORM", "PREFIX", "SUFFIX", "SHAPE", "SPACY", "IS_SPACE"},
+		"rows":                   []any{int64(5000), int64(1000), int64(2500), int64(2500), int64(50), int64(50)},
 		"include_static_vectors": false,
 		// MaxoutWindowEncoder sub-cfg
 		"depth":         int64(4),

@@ -118,7 +118,7 @@ func TestLoaderRecognisesIsSpace(t *testing.T) {
 }
 
 // TestLoaderRecognisesDepNotIn — md pattern 177 carries
-// DEP: {NOT_IN: ['']} ("Dep is non-empty"). Loader maps that to a
+// DEP: {NOT_IN: [”]} ("Dep is non-empty"). Loader maps that to a
 // DepNotIn slice and Unsupported=false.
 func TestLoaderRecognisesDepNotIn(t *testing.T) {
 	patBytes, err := msgpack.Marshal([]map[string]any{{
@@ -153,8 +153,8 @@ func TestMatcher_IsSpaceAndDepNotIn_Match(t *testing.T) {
 	depPunct := ss.Add("punct")
 
 	d := &doc.Doc{Vocab: v, Tokens: []doc.Token{
-		{Text: "\n  ", Tag: tagSP},          // tok 0: whitespace, no Dep
-		{Text: "hello", Tag: tagNN},         // tok 1: not whitespace
+		{Text: "\n  ", Tag: tagSP},             // tok 0: whitespace, no Dep
+		{Text: "hello", Tag: tagNN},            // tok 1: not whitespace
 		{Text: " ", Tag: tagSP, Dep: depPunct}, // tok 2: whitespace + Dep set
 	}}
 

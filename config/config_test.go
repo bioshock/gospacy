@@ -43,7 +43,7 @@ depth = 4
 	require.NoError(t, err)
 	require.Equal(t, "spacy.HashEmbedCNN.v2", cfg.GetString("model.@architectures"))
 	require.Equal(t, int64(96), cfg.GetInt("model.width"))
-	require.Equal(t, int64(4),  cfg.GetInt("model.depth"))
+	require.Equal(t, int64(4), cfg.GetInt("model.depth"))
 }
 
 func TestConfig_RealBundleSmoke(t *testing.T) {

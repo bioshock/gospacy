@@ -2,7 +2,6 @@ package tokenizer
 
 import (
 	"sort"
-	"unicode"
 
 	"github.com/bioshock/gospacy/v3/doc"
 	"github.com/bioshock/gospacy/v3/vocab"
@@ -364,5 +363,3 @@ func sortAndDeoverlap(spans []Span) []Span {
 func isSpaceRune(r rune) bool {
 	return r == ' ' || r == '\t' || r == '\n' || r == '\r' || r == '\v' || r == '\f'
 }
-
-func isUnicodeSpace(r rune) bool { return unicode.IsSpace(r) }

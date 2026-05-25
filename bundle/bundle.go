@@ -579,7 +579,7 @@ func readAny(cfg *config.Config, path string) any {
 			return true
 		}
 		if v := cfg.GetInt(path); v != 0 {
-			return int64(v)
+			return v
 		}
 		if v := cfg.GetFloat(path); v != 0 {
 			return v

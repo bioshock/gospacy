@@ -130,14 +130,15 @@ func cfgIntList(cfg map[string]any, key string) ([]int, error) {
 // Maxout + ExpandWindow).
 //
 // Signature notes (verified via grep):
-//   layers.HashEmbed(ops, nO, nV int, seed uint32) *nn.Model
-//   layers.Concatenate(ops, sublayers ...*nn.Model) *nn.Model
-//   layers.Linear(ops, nO, nI int) *nn.Model
-//   layers.Maxout(ops, nO, nI, nP int) *nn.Model
-//   layers.ExpandWindow(ops, nW int) *nn.Model
-//   layers.Residual(ops, inner *nn.Model) *nn.Model
-//   layers.Chain(ops, sublayers ...*nn.Model) *nn.Model
-//   gonum.New() *gonum.Ops  (implements nn.Ops)
+//
+//	layers.HashEmbed(ops, nO, nV int, seed uint32) *nn.Model
+//	layers.Concatenate(ops, sublayers ...*nn.Model) *nn.Model
+//	layers.Linear(ops, nO, nI int) *nn.Model
+//	layers.Maxout(ops, nO, nI, nP int) *nn.Model
+//	layers.ExpandWindow(ops, nW int) *nn.Model
+//	layers.Residual(ops, inner *nn.Model) *nn.Model
+//	layers.Chain(ops, sublayers ...*nn.Model) *nn.Model
+//	gonum.New() *gonum.Ops  (implements nn.Ops)
 func buildHashEmbedCNNV2(cfg map[string]any) (*nn.Model, error) {
 	width := cfgInt(cfg, "width", 96)
 	depth := cfgInt(cfg, "depth", 4)

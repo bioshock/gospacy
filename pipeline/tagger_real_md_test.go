@@ -28,8 +28,10 @@ import (
 // ...` for any miss, then fails with the aggregate counts.
 //
 // Goldens: testdata/golden/tagger_md.json (text, tag, pos),
-//   testdata/golden/attribute_ruler_md.json (morph),
-//   testdata/golden/lemmatizer_md.json (lemma).
+//
+//	testdata/golden/attribute_ruler_md.json (morph),
+//	testdata/golden/lemmatizer_md.json (lemma).
+//
 // Regenerated via `GOSPACY_MODEL=en_core_web_md testharness/.venv/bin/python
 // testharness/dump_tagger.py` (and dump_attribute_ruler.py, dump_lemmatizer.py).
 //

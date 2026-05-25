@@ -15,7 +15,7 @@ func TestLexeme_AlphaWord(t *testing.T) {
 	lex := NewLexeme(s, "Hello")
 
 	require.Equal(t, s.Add("Hello"), lex.Orth)
-	require.Equal(t, s.Add("H"), lex.Prefix) // default prefix len = 1 (matches spaCy)
+	require.Equal(t, s.Add("H"), lex.Prefix)   // default prefix len = 1 (matches spaCy)
 	require.Equal(t, s.Add("llo"), lex.Suffix) // default suffix len = 3
 	require.Equal(t, s.Add("Xxxxx"), lex.Shape)
 
@@ -82,7 +82,7 @@ func TestLexeme_MatchesPythonGolden(t *testing.T) {
 		lex := NewLexeme(s, w.Text)
 		require.Equalf(t, s.Add(w.Prefix), lex.Prefix, "%q.prefix", w.Text)
 		require.Equalf(t, s.Add(w.Suffix), lex.Suffix, "%q.suffix", w.Text)
-		require.Equalf(t, s.Add(w.Shape),  lex.Shape,  "%q.shape", w.Text)
+		require.Equalf(t, s.Add(w.Shape), lex.Shape, "%q.shape", w.Text)
 		require.Equalf(t, w.IsAlpha, lex.IsAlpha, "%q.is_alpha", w.Text)
 		require.Equalf(t, w.IsDigit, lex.IsDigit, "%q.is_digit", w.Text)
 		require.Equalf(t, w.IsPunct, lex.IsPunct, "%q.is_punct", w.Text)

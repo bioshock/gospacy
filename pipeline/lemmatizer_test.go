@@ -9,8 +9,8 @@ import (
 	"github.com/bioshock/gospacy/v3/bundle"
 	"github.com/bioshock/gospacy/v3/doc"
 	"github.com/bioshock/gospacy/v3/internal/lookups"
-	en "github.com/bioshock/gospacy/v3/pipeline/lang/en"
 	"github.com/bioshock/gospacy/v3/pipeline"
+	en "github.com/bioshock/gospacy/v3/pipeline/lang/en"
 	"github.com/bioshock/gospacy/v3/vocab"
 	"github.com/stretchr/testify/require"
 )

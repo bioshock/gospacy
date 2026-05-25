@@ -24,12 +24,12 @@ func TestRegistry_LookupRegisteredButStub(t *testing.T) {
 
 func TestRegistry_BuildHashEmbedCNN(t *testing.T) {
 	model, err := Build("spacy.HashEmbedCNN.v2", map[string]any{
-		"width":       int64(96),
-		"depth":       int64(4),
-		"embed_size":  int64(2000),
-		"window_size": int64(1),
-		"maxout_pieces": int64(3),
-		"subword_features": true,
+		"width":              int64(96),
+		"depth":              int64(4),
+		"embed_size":         int64(2000),
+		"window_size":        int64(1),
+		"maxout_pieces":      int64(3),
+		"subword_features":   true,
 		"pretrained_vectors": nil,
 	})
 	require.NoError(t, err)

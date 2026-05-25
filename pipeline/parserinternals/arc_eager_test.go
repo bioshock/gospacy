@@ -26,12 +26,12 @@ func TestArcEager_LeftArcMakesParentChildAndPops(t *testing.T) {
 	Apply(s, ActionShift, "", 0)
 	require.Equal(t, 0, s.S(0))
 	Apply(s, ActionLeft, "nsubj", 100)
-	require.Equal(t, 1, s.H(0))             // she ← sees
+	require.Equal(t, 1, s.H(0)) // she ← sees
 	require.Equal(t, uint64(100), s.heads0Label())
-	require.Equal(t, 0, s.StackDepth())     // S(0) popped
-	Apply(s, ActionShift, "", 0)            // shift "sees"
+	require.Equal(t, 0, s.StackDepth()) // S(0) popped
+	Apply(s, ActionShift, "", 0)        // shift "sees"
 	Apply(s, ActionRight, "dobj", 200)
-	require.Equal(t, 1, s.H(2))             // him ← sees (right arc)
+	require.Equal(t, 1, s.H(2)) // him ← sees (right arc)
 	// After right-arc we push B(0)=him onto the stack.
 	require.Equal(t, 2, s.S(0))
 }
