@@ -1,0 +1,358 @@
+{
+  "s01": [
+    {
+      "text": "The",
+      "lemma": "the",
+      "pos": "DET"
+    },
+    {
+      "text": "quick",
+      "lemma": "quick",
+      "pos": "ADJ"
+    },
+    {
+      "text": "brown",
+      "lemma": "brown",
+      "pos": "ADJ"
+    },
+    {
+      "text": "fox",
+      "lemma": "fox",
+      "pos": "NOUN"
+    },
+    {
+      "text": "jumps",
+      "lemma": "jump",
+      "pos": "VERB"
+    },
+    {
+      "text": "over",
+      "lemma": "over",
+      "pos": "ADP"
+    },
+    {
+      "text": "the",
+      "lemma": "the",
+      "pos": "DET"
+    },
+    {
+      "text": "lazy",
+      "lemma": "lazy",
+      "pos": "ADJ"
+    },
+    {
+      "text": "dog",
+      "lemma": "dog",
+      "pos": "NOUN"
+    },
+    {
+      "text": ".",
+      "lemma": ".",
+      "pos": "PUNCT"
+    }
+  ],
+  "s02": [
+    {
+      "text": "She",
+      "lemma": "she",
+      "pos": "PRON"
+    },
+    {
+      "text": "sells",
+      "lemma": "sell",
+      "pos": "VERB"
+    },
+    {
+      "text": "seashells",
+      "lemma": "seashell",
+      "pos": "NOUN"
+    },
+    {
+      "text": "by",
+      "lemma": "by",
+      "pos": "ADP"
+    },
+    {
+      "text": "the",
+      "lemma": "the",
+      "pos": "DET"
+    },
+    {
+      "text": "seashore",
+      "lemma": "seashore",
+      "pos": "NOUN"
+    },
+    {
+      "text": ".",
+      "lemma": ".",
+      "pos": "PUNCT"
+    }
+  ],
+  "s03": [
+    {
+      "text": "I",
+      "lemma": "I",
+      "pos": "PRON"
+    },
+    {
+      "text": "do",
+      "lemma": "do",
+      "pos": "AUX"
+    },
+    {
+      "text": "not",
+      "lemma": "not",
+      "pos": "PART"
+    },
+    {
+      "text": "like",
+      "lemma": "like",
+      "pos": "VERB"
+    },
+    {
+      "text": "green",
+      "lemma": "green",
+      "pos": "ADJ"
+    },
+    {
+      "text": "eggs",
+      "lemma": "egg",
+      "pos": "NOUN"
+    },
+    {
+      "text": "and",
+      "lemma": "and",
+      "pos": "CCONJ"
+    },
+    {
+      "text": "ham",
+      "lemma": "ham",
+      "pos": "NOUN"
+    },
+    {
+      "text": ".",
+      "lemma": ".",
+      "pos": "PUNCT"
+    }
+  ],
+  "s04": [
+    {
+      "text": "Apple",
+      "lemma": "Apple",
+      "pos": "PROPN"
+    },
+    {
+      "text": "is",
+      "lemma": "be",
+      "pos": "AUX"
+    },
+    {
+      "text": "looking",
+      "lemma": "look",
+      "pos": "VERB"
+    },
+    {
+      "text": "at",
+      "lemma": "at",
+      "pos": "ADP"
+    },
+    {
+      "text": "buying",
+      "lemma": "buy",
+      "pos": "VERB"
+    },
+    {
+      "text": "U.K.",
+      "lemma": "U.K.",
+      "pos": "PROPN"
+    },
+    {
+      "text": "startup",
+      "lemma": "startup",
+      "pos": "NOUN"
+    },
+    {
+      "text": "for",
+      "lemma": "for",
+      "pos": "ADP"
+    },
+    {
+      "text": "$",
+      "lemma": "$",
+      "pos": "SYM"
+    },
+    {
+      "text": "1",
+      "lemma": "1",
+      "pos": "NUM"
+    },
+    {
+      "text": "billion",
+      "lemma": "billion",
+      "pos": "NUM"
+    },
+    {
+      "text": ".",
+      "lemma": ".",
+      "pos": "PUNCT"
+    }
+  ],
+  "s05": [
+    {
+      "text": "Do",
+      "lemma": "do",
+      "pos": "AUX"
+    },
+    {
+      "text": "n't",
+      "lemma": "not",
+      "pos": "PART"
+    },
+    {
+      "text": "go",
+      "lemma": "go",
+      "pos": "VERB"
+    },
+    {
+      "text": "to",
+      "lemma": "to",
+      "pos": "ADP"
+    },
+    {
+      "text": "the",
+      "lemma": "the",
+      "pos": "DET"
+    },
+    {
+      "text": "U.S.A.",
+      "lemma": "U.S.A.",
+      "pos": "PROPN"
+    },
+    {
+      "text": "today",
+      "lemma": "today",
+      "pos": "NOUN"
+    },
+    {
+      "text": "!",
+      "lemma": "!",
+      "pos": "PUNCT"
+    }
+  ],
+  "s06": [
+    {
+      "text": "The",
+      "lemma": "the",
+      "pos": "DET"
+    },
+    {
+      "text": "cat",
+      "lemma": "cat",
+      "pos": "NOUN"
+    },
+    {
+      "text": "sat",
+      "lemma": "sit",
+      "pos": "VERB"
+    },
+    {
+      "text": "on",
+      "lemma": "on",
+      "pos": "ADP"
+    },
+    {
+      "text": "the",
+      "lemma": "the",
+      "pos": "DET"
+    },
+    {
+      "text": "mat",
+      "lemma": "mat",
+      "pos": "NOUN"
+    },
+    {
+      "text": ".",
+      "lemma": ".",
+      "pos": "PUNCT"
+    }
+  ],
+  "s07": [
+    {
+      "text": "John",
+      "lemma": "John",
+      "pos": "PROPN"
+    },
+    {
+      "text": "ran",
+      "lemma": "run",
+      "pos": "VERB"
+    },
+    {
+      "text": "faster",
+      "lemma": "fast",
+      "pos": "ADV"
+    },
+    {
+      "text": "than",
+      "lemma": "than",
+      "pos": "SCONJ"
+    },
+    {
+      "text": "Mary",
+      "lemma": "Mary",
+      "pos": "PROPN"
+    },
+    {
+      "text": "did",
+      "lemma": "do",
+      "pos": "VERB"
+    },
+    {
+      "text": ".",
+      "lemma": ".",
+      "pos": "PUNCT"
+    }
+  ],
+  "s08": [
+    {
+      "text": "Children",
+      "lemma": "child",
+      "pos": "NOUN"
+    },
+    {
+      "text": "are",
+      "lemma": "be",
+      "pos": "AUX"
+    },
+    {
+      "text": "reading",
+      "lemma": "read",
+      "pos": "VERB"
+    },
+    {
+      "text": "books",
+      "lemma": "book",
+      "pos": "NOUN"
+    },
+    {
+      "text": "in",
+      "lemma": "in",
+      "pos": "ADP"
+    },
+    {
+      "text": "the",
+      "lemma": "the",
+      "pos": "DET"
+    },
+    {
+      "text": "library",
+      "lemma": "library",
+      "pos": "NOUN"
+    },
+    {
+      "text": ".",
+      "lemma": ".",
+      "pos": "PUNCT"
+    }
+  ]
+}

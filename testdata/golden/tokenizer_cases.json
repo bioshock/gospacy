@@ -1,0 +1,678 @@
+{
+  "cases": [
+    {
+      "text": "",
+      "tokens": []
+    },
+    {
+      "text": "hello",
+      "tokens": [
+        {
+          "orth": "hello",
+          "idx": 0,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "hello world",
+      "tokens": [
+        {
+          "orth": "hello",
+          "idx": 0,
+          "ws": true
+        },
+        {
+          "orth": "world",
+          "idx": 6,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "Hello, world!",
+      "tokens": [
+        {
+          "orth": "Hello",
+          "idx": 0,
+          "ws": false
+        },
+        {
+          "orth": ",",
+          "idx": 5,
+          "ws": true
+        },
+        {
+          "orth": "world",
+          "idx": 7,
+          "ws": false
+        },
+        {
+          "orth": "!",
+          "idx": 12,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "Don't go.",
+      "tokens": [
+        {
+          "orth": "Do",
+          "idx": 0,
+          "ws": false
+        },
+        {
+          "orth": "n't",
+          "idx": 2,
+          "ws": true
+        },
+        {
+          "orth": "go",
+          "idx": 6,
+          "ws": false
+        },
+        {
+          "orth": ".",
+          "idx": 8,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "He said \"yes\".",
+      "tokens": [
+        {
+          "orth": "He",
+          "idx": 0,
+          "ws": true
+        },
+        {
+          "orth": "said",
+          "idx": 3,
+          "ws": true
+        },
+        {
+          "orth": "\"",
+          "idx": 8,
+          "ws": false
+        },
+        {
+          "orth": "yes",
+          "idx": 9,
+          "ws": false
+        },
+        {
+          "orth": "\"",
+          "idx": 12,
+          "ws": false
+        },
+        {
+          "orth": ".",
+          "idx": 13,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "U.S.A. is large.",
+      "tokens": [
+        {
+          "orth": "U.S.A.",
+          "idx": 0,
+          "ws": true
+        },
+        {
+          "orth": "is",
+          "idx": 7,
+          "ws": true
+        },
+        {
+          "orth": "large",
+          "idx": 10,
+          "ws": false
+        },
+        {
+          "orth": ".",
+          "idx": 15,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "I went to the U.S.",
+      "tokens": [
+        {
+          "orth": "I",
+          "idx": 0,
+          "ws": true
+        },
+        {
+          "orth": "went",
+          "idx": 2,
+          "ws": true
+        },
+        {
+          "orth": "to",
+          "idx": 7,
+          "ws": true
+        },
+        {
+          "orth": "the",
+          "idx": 10,
+          "ws": true
+        },
+        {
+          "orth": "U.S.",
+          "idx": 14,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "Visit https://example.com today.",
+      "tokens": [
+        {
+          "orth": "Visit",
+          "idx": 0,
+          "ws": true
+        },
+        {
+          "orth": "https://example.com",
+          "idx": 6,
+          "ws": true
+        },
+        {
+          "orth": "today",
+          "idx": 26,
+          "ws": false
+        },
+        {
+          "orth": ".",
+          "idx": 31,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "(hello)",
+      "tokens": [
+        {
+          "orth": "(",
+          "idx": 0,
+          "ws": false
+        },
+        {
+          "orth": "hello",
+          "idx": 1,
+          "ws": false
+        },
+        {
+          "orth": ")",
+          "idx": 6,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "1+1=2",
+      "tokens": [
+        {
+          "orth": "1",
+          "idx": 0,
+          "ws": false
+        },
+        {
+          "orth": "+",
+          "idx": 1,
+          "ws": false
+        },
+        {
+          "orth": "1=2",
+          "idx": 2,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "$50",
+      "tokens": [
+        {
+          "orth": "$",
+          "idx": 0,
+          "ws": false
+        },
+        {
+          "orth": "50",
+          "idx": 1,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "50%",
+      "tokens": [
+        {
+          "orth": "50",
+          "idx": 0,
+          "ws": false
+        },
+        {
+          "orth": "%",
+          "idx": 2,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "What?!",
+      "tokens": [
+        {
+          "orth": "What",
+          "idx": 0,
+          "ws": false
+        },
+        {
+          "orth": "?",
+          "idx": 4,
+          "ws": false
+        },
+        {
+          "orth": "!",
+          "idx": 5,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "well-known issue",
+      "tokens": [
+        {
+          "orth": "well",
+          "idx": 0,
+          "ws": false
+        },
+        {
+          "orth": "-",
+          "idx": 4,
+          "ws": false
+        },
+        {
+          "orth": "known",
+          "idx": 5,
+          "ws": true
+        },
+        {
+          "orth": "issue",
+          "idx": 11,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "co-author",
+      "tokens": [
+        {
+          "orth": "co",
+          "idx": 0,
+          "ws": false
+        },
+        {
+          "orth": "-",
+          "idx": 2,
+          "ws": false
+        },
+        {
+          "orth": "author",
+          "idx": 3,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "1999-2024",
+      "tokens": [
+        {
+          "orth": "1999",
+          "idx": 0,
+          "ws": false
+        },
+        {
+          "orth": "-",
+          "idx": 4,
+          "ws": false
+        },
+        {
+          "orth": "2024",
+          "idx": 5,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "Mr. Smith arrived.",
+      "tokens": [
+        {
+          "orth": "Mr.",
+          "idx": 0,
+          "ws": true
+        },
+        {
+          "orth": "Smith",
+          "idx": 4,
+          "ws": true
+        },
+        {
+          "orth": "arrived",
+          "idx": 10,
+          "ws": false
+        },
+        {
+          "orth": ".",
+          "idx": 17,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "I.B.M. and A.I.",
+      "tokens": [
+        {
+          "orth": "I.B.M.",
+          "idx": 0,
+          "ws": true
+        },
+        {
+          "orth": "and",
+          "idx": 7,
+          "ws": true
+        },
+        {
+          "orth": "A.I.",
+          "idx": 11,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "It's a test, isn't it?",
+      "tokens": [
+        {
+          "orth": "It",
+          "idx": 0,
+          "ws": false
+        },
+        {
+          "orth": "'s",
+          "idx": 2,
+          "ws": true
+        },
+        {
+          "orth": "a",
+          "idx": 5,
+          "ws": true
+        },
+        {
+          "orth": "test",
+          "idx": 7,
+          "ws": false
+        },
+        {
+          "orth": ",",
+          "idx": 11,
+          "ws": true
+        },
+        {
+          "orth": "is",
+          "idx": 13,
+          "ws": false
+        },
+        {
+          "orth": "n't",
+          "idx": 15,
+          "ws": true
+        },
+        {
+          "orth": "it",
+          "idx": 19,
+          "ws": false
+        },
+        {
+          "orth": "?",
+          "idx": 21,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "Email: me@example.com.",
+      "tokens": [
+        {
+          "orth": "Email",
+          "idx": 0,
+          "ws": false
+        },
+        {
+          "orth": ":",
+          "idx": 5,
+          "ws": true
+        },
+        {
+          "orth": "me@example.com",
+          "idx": 7,
+          "ws": false
+        },
+        {
+          "orth": ".",
+          "idx": 21,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "—",
+      "tokens": [
+        {
+          "orth": "—",
+          "idx": 0,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "...",
+      "tokens": [
+        {
+          "orth": "...",
+          "idx": 0,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "    leading spaces",
+      "tokens": [
+        {
+          "orth": "    ",
+          "idx": 0,
+          "ws": false
+        },
+        {
+          "orth": "leading",
+          "idx": 4,
+          "ws": true
+        },
+        {
+          "orth": "spaces",
+          "idx": 12,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "trailing spaces    ",
+      "tokens": [
+        {
+          "orth": "trailing",
+          "idx": 0,
+          "ws": true
+        },
+        {
+          "orth": "spaces",
+          "idx": 9,
+          "ws": true
+        },
+        {
+          "orth": "   ",
+          "idx": 16,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "multiple   spaces",
+      "tokens": [
+        {
+          "orth": "multiple",
+          "idx": 0,
+          "ws": true
+        },
+        {
+          "orth": "  ",
+          "idx": 9,
+          "ws": false
+        },
+        {
+          "orth": "spaces",
+          "idx": 11,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "\tTabbed\t",
+      "tokens": [
+        {
+          "orth": "\t",
+          "idx": 0,
+          "ws": false
+        },
+        {
+          "orth": "Tabbed",
+          "idx": 1,
+          "ws": false
+        },
+        {
+          "orth": "\t",
+          "idx": 7,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "ünïcødé tëst",
+      "tokens": [
+        {
+          "orth": "ünïcødé",
+          "idx": 0,
+          "ws": true
+        },
+        {
+          "orth": "tëst",
+          "idx": 8,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "1. First\n2. Second",
+      "tokens": [
+        {
+          "orth": "1",
+          "idx": 0,
+          "ws": false
+        },
+        {
+          "orth": ".",
+          "idx": 1,
+          "ws": true
+        },
+        {
+          "orth": "First",
+          "idx": 3,
+          "ws": false
+        },
+        {
+          "orth": "\n",
+          "idx": 8,
+          "ws": false
+        },
+        {
+          "orth": "2",
+          "idx": 9,
+          "ws": false
+        },
+        {
+          "orth": ".",
+          "idx": 10,
+          "ws": true
+        },
+        {
+          "orth": "Second",
+          "idx": 12,
+          "ws": false
+        }
+      ]
+    },
+    {
+      "text": "no-pre—em—dash-fix",
+      "tokens": [
+        {
+          "orth": "no",
+          "idx": 0,
+          "ws": false
+        },
+        {
+          "orth": "-",
+          "idx": 2,
+          "ws": false
+        },
+        {
+          "orth": "pre",
+          "idx": 3,
+          "ws": false
+        },
+        {
+          "orth": "—",
+          "idx": 6,
+          "ws": false
+        },
+        {
+          "orth": "em",
+          "idx": 7,
+          "ws": false
+        },
+        {
+          "orth": "—",
+          "idx": 9,
+          "ws": false
+        },
+        {
+          "orth": "dash",
+          "idx": 10,
+          "ws": false
+        },
+        {
+          "orth": "-",
+          "idx": 14,
+          "ws": false
+        },
+        {
+          "orth": "fix",
+          "idx": 15,
+          "ws": false
+        }
+      ]
+    }
+  ]
+}

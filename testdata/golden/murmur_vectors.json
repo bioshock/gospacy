@@ -1,0 +1,170 @@
+{
+  "hash64": [
+    {
+      "key": "",
+      "seed": 0,
+      "value_hex": "0x0000000000000000",
+      "value_dec": "0"
+    },
+    {
+      "key": "",
+      "seed": 1,
+      "value_hex": "0xc6a4a7935bd064dc",
+      "value_dec": "14313749767032693980"
+    },
+    {
+      "key": "a",
+      "seed": 0,
+      "value_hex": "0x071717d2d36b6b11",
+      "value_dec": "510903276987443985"
+    },
+    {
+      "key": "a",
+      "seed": 1,
+      "value_hex": "0xa52be5b3f6674b2a",
+      "value_dec": "11901859001352538922"
+    },
+    {
+      "key": "hello",
+      "seed": 0,
+      "value_hex": "0x1e68d17c457bf117",
+      "value_dec": "2191231550387646743"
+    },
+    {
+      "key": "hello",
+      "seed": 1,
+      "value_hex": "0x530a1bd8a612eb4e",
+      "value_dec": "5983625672228268878"
+    },
+    {
+      "key": "the",
+      "seed": 1,
+      "value_hex": "0x670e66a635739a92",
+      "value_dec": "7425985699627899538"
+    },
+    {
+      "key": "spacy",
+      "seed": 1,
+      "value_hex": "0x93a5a6b96fb49119",
+      "value_dec": "10639093010105930009"
+    },
+    {
+      "key": "The quick brown fox jumps over the lazy dog.",
+      "seed": 1,
+      "value_hex": "0xf710e1d43f9a55af",
+      "value_dec": "17802977628711966127"
+    },
+    {
+      "key": "ünïcødé",
+      "seed": 1,
+      "value_hex": "0x11dd1a819ee0e54f",
+      "value_dec": "1287214212516472143"
+    },
+    {
+      "key": "aaaaaaaaaaaaaaa",
+      "seed": 1,
+      "value_hex": "0x53afb824086b9a31",
+      "value_dec": "6030240890971986481"
+    },
+    {
+      "key": "aaaaaaaaaaaaaaaa",
+      "seed": 1,
+      "value_hex": "0xef5bdda8b83487c4",
+      "value_dec": "17247622914660140996"
+    },
+    {
+      "key": "aaaaaaaaaaaaaaaaa",
+      "seed": 1,
+      "value_hex": "0xb786e4e624d7fc91",
+      "value_dec": "13224509032931785873"
+    },
+    {
+      "key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "seed": 1,
+      "value_hex": "0x20e2c9d3157fc569",
+      "value_dec": "2369678262386279785"
+    }
+  ],
+  "hash3_x86_128_uint64": [
+    {
+      "key": 0,
+      "seed": 0,
+      "value": [
+        3428303819,
+        685728695,
+        3303603794,
+        4065689084
+      ]
+    },
+    {
+      "key": 0,
+      "seed": 1,
+      "value": [
+        3846663968,
+        1931907607,
+        1730726412,
+        4059709384
+      ]
+    },
+    {
+      "key": 1,
+      "seed": 0,
+      "value": [
+        4211459146,
+        4457399,
+        3547175942,
+        1032506804
+      ]
+    },
+    {
+      "key": 1,
+      "seed": 1,
+      "value": [
+        4080786504,
+        1033735080,
+        580658153,
+        4247176725
+      ]
+    },
+    {
+      "key": 42,
+      "seed": 0,
+      "value": [
+        2312273400,
+        3064775577,
+        2532454272,
+        616110075
+      ]
+    },
+    {
+      "key": 42,
+      "seed": 1,
+      "value": [
+        724766479,
+        2167450930,
+        3786875002,
+        904422800
+      ]
+    },
+    {
+      "key": 18446744073709551615,
+      "seed": 1,
+      "value": [
+        732395596,
+        3315479330,
+        2367904865,
+        2996048921
+      ]
+    },
+    {
+      "key": 123456789,
+      "seed": 7,
+      "value": [
+        3103615784,
+        283893993,
+        1622805532,
+        830210575
+      ]
+    }
+  ]
+}

@@ -1,0 +1,426 @@
+{
+  "s01": [
+    {
+      "text": "The",
+      "tag": "DT",
+      "pos": "DET",
+      "morph": "Definite=Def|PronType=Art"
+    },
+    {
+      "text": "quick",
+      "tag": "JJ",
+      "pos": "ADJ",
+      "morph": "Degree=Pos"
+    },
+    {
+      "text": "brown",
+      "tag": "JJ",
+      "pos": "ADJ",
+      "morph": "Degree=Pos"
+    },
+    {
+      "text": "fox",
+      "tag": "NN",
+      "pos": "NOUN",
+      "morph": "Number=Sing"
+    },
+    {
+      "text": "jumps",
+      "tag": "VBZ",
+      "pos": "VERB",
+      "morph": "Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+    },
+    {
+      "text": "over",
+      "tag": "IN",
+      "pos": "ADP",
+      "morph": ""
+    },
+    {
+      "text": "the",
+      "tag": "DT",
+      "pos": "DET",
+      "morph": "Definite=Def|PronType=Art"
+    },
+    {
+      "text": "lazy",
+      "tag": "JJ",
+      "pos": "ADJ",
+      "morph": "Degree=Pos"
+    },
+    {
+      "text": "dog",
+      "tag": "NN",
+      "pos": "NOUN",
+      "morph": "Number=Sing"
+    },
+    {
+      "text": ".",
+      "tag": ".",
+      "pos": "PUNCT",
+      "morph": "PunctType=Peri"
+    }
+  ],
+  "s02": [
+    {
+      "text": "She",
+      "tag": "PRP",
+      "pos": "PRON",
+      "morph": "Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs"
+    },
+    {
+      "text": "sells",
+      "tag": "VBZ",
+      "pos": "VERB",
+      "morph": "Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+    },
+    {
+      "text": "seashells",
+      "tag": "NNS",
+      "pos": "NOUN",
+      "morph": "Number=Plur"
+    },
+    {
+      "text": "by",
+      "tag": "IN",
+      "pos": "ADP",
+      "morph": ""
+    },
+    {
+      "text": "the",
+      "tag": "DT",
+      "pos": "DET",
+      "morph": "Definite=Def|PronType=Art"
+    },
+    {
+      "text": "seashore",
+      "tag": "NN",
+      "pos": "NOUN",
+      "morph": "Number=Sing"
+    },
+    {
+      "text": ".",
+      "tag": ".",
+      "pos": "PUNCT",
+      "morph": "PunctType=Peri"
+    }
+  ],
+  "s03": [
+    {
+      "text": "I",
+      "tag": "PRP",
+      "pos": "PRON",
+      "morph": "Case=Nom|Number=Sing|Person=1|PronType=Prs"
+    },
+    {
+      "text": "do",
+      "tag": "VBP",
+      "pos": "AUX",
+      "morph": "Mood=Ind|Tense=Pres|VerbForm=Fin"
+    },
+    {
+      "text": "not",
+      "tag": "RB",
+      "pos": "PART",
+      "morph": "Polarity=Neg"
+    },
+    {
+      "text": "like",
+      "tag": "VB",
+      "pos": "VERB",
+      "morph": "VerbForm=Inf"
+    },
+    {
+      "text": "green",
+      "tag": "JJ",
+      "pos": "ADJ",
+      "morph": "Degree=Pos"
+    },
+    {
+      "text": "eggs",
+      "tag": "NNS",
+      "pos": "NOUN",
+      "morph": "Number=Plur"
+    },
+    {
+      "text": "and",
+      "tag": "CC",
+      "pos": "CCONJ",
+      "morph": "ConjType=Cmp"
+    },
+    {
+      "text": "ham",
+      "tag": "NN",
+      "pos": "NOUN",
+      "morph": "Number=Sing"
+    },
+    {
+      "text": ".",
+      "tag": ".",
+      "pos": "PUNCT",
+      "morph": "PunctType=Peri"
+    }
+  ],
+  "s04": [
+    {
+      "text": "Apple",
+      "tag": "NNP",
+      "pos": "PROPN",
+      "morph": "Number=Sing"
+    },
+    {
+      "text": "is",
+      "tag": "VBZ",
+      "pos": "AUX",
+      "morph": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+    },
+    {
+      "text": "looking",
+      "tag": "VBG",
+      "pos": "VERB",
+      "morph": "Aspect=Prog|Tense=Pres|VerbForm=Part"
+    },
+    {
+      "text": "at",
+      "tag": "IN",
+      "pos": "ADP",
+      "morph": ""
+    },
+    {
+      "text": "buying",
+      "tag": "VBG",
+      "pos": "VERB",
+      "morph": "Aspect=Prog|Tense=Pres|VerbForm=Part"
+    },
+    {
+      "text": "U.K.",
+      "tag": "NNP",
+      "pos": "PROPN",
+      "morph": "Number=Sing"
+    },
+    {
+      "text": "startup",
+      "tag": "VBD",
+      "pos": "VERB",
+      "morph": "Tense=Past|VerbForm=Fin"
+    },
+    {
+      "text": "for",
+      "tag": "IN",
+      "pos": "ADP",
+      "morph": ""
+    },
+    {
+      "text": "$",
+      "tag": "$",
+      "pos": "SYM",
+      "morph": ""
+    },
+    {
+      "text": "1",
+      "tag": "CD",
+      "pos": "NUM",
+      "morph": "NumType=Card"
+    },
+    {
+      "text": "billion",
+      "tag": "CD",
+      "pos": "NUM",
+      "morph": "NumType=Card"
+    },
+    {
+      "text": ".",
+      "tag": ".",
+      "pos": "PUNCT",
+      "morph": "PunctType=Peri"
+    }
+  ],
+  "s05": [
+    {
+      "text": "Do",
+      "tag": "VBP",
+      "pos": "AUX",
+      "morph": "Mood=Ind|Tense=Pres|VerbForm=Fin"
+    },
+    {
+      "text": "n't",
+      "tag": "RB",
+      "pos": "PART",
+      "morph": "Polarity=Neg"
+    },
+    {
+      "text": "go",
+      "tag": "VB",
+      "pos": "VERB",
+      "morph": "VerbForm=Inf"
+    },
+    {
+      "text": "to",
+      "tag": "IN",
+      "pos": "ADP",
+      "morph": ""
+    },
+    {
+      "text": "the",
+      "tag": "DT",
+      "pos": "DET",
+      "morph": "Definite=Def|PronType=Art"
+    },
+    {
+      "text": "U.S.A.",
+      "tag": "NNP",
+      "pos": "PROPN",
+      "morph": "Number=Sing"
+    },
+    {
+      "text": "today",
+      "tag": "NN",
+      "pos": "NOUN",
+      "morph": "Number=Sing"
+    },
+    {
+      "text": "!",
+      "tag": ".",
+      "pos": "PUNCT",
+      "morph": "PunctType=Peri"
+    }
+  ],
+  "s06": [
+    {
+      "text": "The",
+      "tag": "DT",
+      "pos": "DET",
+      "morph": "Definite=Def|PronType=Art"
+    },
+    {
+      "text": "cat",
+      "tag": "NN",
+      "pos": "NOUN",
+      "morph": "Number=Sing"
+    },
+    {
+      "text": "sat",
+      "tag": "VBD",
+      "pos": "VERB",
+      "morph": "Tense=Past|VerbForm=Fin"
+    },
+    {
+      "text": "on",
+      "tag": "IN",
+      "pos": "ADP",
+      "morph": ""
+    },
+    {
+      "text": "the",
+      "tag": "DT",
+      "pos": "DET",
+      "morph": "Definite=Def|PronType=Art"
+    },
+    {
+      "text": "mat",
+      "tag": "NN",
+      "pos": "NOUN",
+      "morph": "Number=Sing"
+    },
+    {
+      "text": ".",
+      "tag": ".",
+      "pos": "PUNCT",
+      "morph": "PunctType=Peri"
+    }
+  ],
+  "s07": [
+    {
+      "text": "John",
+      "tag": "NNP",
+      "pos": "PROPN",
+      "morph": "Number=Sing"
+    },
+    {
+      "text": "ran",
+      "tag": "VBD",
+      "pos": "VERB",
+      "morph": "Tense=Past|VerbForm=Fin"
+    },
+    {
+      "text": "faster",
+      "tag": "RBR",
+      "pos": "ADV",
+      "morph": "Degree=Cmp"
+    },
+    {
+      "text": "than",
+      "tag": "IN",
+      "pos": "SCONJ",
+      "morph": ""
+    },
+    {
+      "text": "Mary",
+      "tag": "NNP",
+      "pos": "PROPN",
+      "morph": "Number=Sing"
+    },
+    {
+      "text": "did",
+      "tag": "VBD",
+      "pos": "VERB",
+      "morph": "Tense=Past|VerbForm=Fin"
+    },
+    {
+      "text": ".",
+      "tag": ".",
+      "pos": "PUNCT",
+      "morph": "PunctType=Peri"
+    }
+  ],
+  "s08": [
+    {
+      "text": "Children",
+      "tag": "NNS",
+      "pos": "NOUN",
+      "morph": "Number=Plur"
+    },
+    {
+      "text": "are",
+      "tag": "VBP",
+      "pos": "AUX",
+      "morph": "Mood=Ind|Tense=Pres|VerbForm=Fin"
+    },
+    {
+      "text": "reading",
+      "tag": "VBG",
+      "pos": "VERB",
+      "morph": "Aspect=Prog|Tense=Pres|VerbForm=Part"
+    },
+    {
+      "text": "books",
+      "tag": "NNS",
+      "pos": "NOUN",
+      "morph": "Number=Plur"
+    },
+    {
+      "text": "in",
+      "tag": "IN",
+      "pos": "ADP",
+      "morph": ""
+    },
+    {
+      "text": "the",
+      "tag": "DT",
+      "pos": "DET",
+      "morph": "Definite=Def|PronType=Art"
+    },
+    {
+      "text": "library",
+      "tag": "NN",
+      "pos": "NOUN",
+      "morph": "Number=Sing"
+    },
+    {
+      "text": ".",
+      "tag": ".",
+      "pos": "PUNCT",
+      "morph": "PunctType=Peri"
+    }
+  ]
+}

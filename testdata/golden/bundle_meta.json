@@ -1,0 +1,35 @@
+{
+  "lang": "en",
+  "pipeline": [
+    "tok2vec",
+    "tagger",
+    "parser",
+    "senter",
+    "attribute_ruler",
+    "lemmatizer",
+    "ner"
+  ],
+  "components": {
+    "attribute_ruler": {
+      "architecture": null
+    },
+    "lemmatizer": {
+      "architecture": null
+    },
+    "ner": {
+      "architecture": "spacy.TransitionBasedParser.v2"
+    },
+    "parser": {
+      "architecture": "spacy.TransitionBasedParser.v2"
+    },
+    "senter": {
+      "architecture": "spacy.Tagger.v2"
+    },
+    "tagger": {
+      "architecture": "spacy.Tagger.v2"
+    },
+    "tok2vec": {
+      "architecture": "spacy.Tok2Vec.v2"
+    }
+  }
+}

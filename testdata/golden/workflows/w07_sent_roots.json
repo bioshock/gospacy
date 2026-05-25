@@ -1,0 +1,58 @@
+{
+  "s01": [
+    {
+      "text": "jumps",
+      "dep": "ROOT",
+      "pos": "VERB"
+    }
+  ],
+  "s02": [
+    {
+      "text": "sells",
+      "dep": "ROOT",
+      "pos": "VERB"
+    }
+  ],
+  "s03": [
+    {
+      "text": "like",
+      "dep": "ROOT",
+      "pos": "VERB"
+    }
+  ],
+  "s04": [
+    {
+      "text": "looking",
+      "dep": "ROOT",
+      "pos": "VERB"
+    }
+  ],
+  "s05": [
+    {
+      "text": "go",
+      "dep": "ROOT",
+      "pos": "VERB"
+    }
+  ],
+  "s06": [
+    {
+      "text": "sat",
+      "dep": "ROOT",
+      "pos": "VERB"
+    }
+  ],
+  "s07": [
+    {
+      "text": "ran",
+      "dep": "ROOT",
+      "pos": "VERB"
+    }
+  ],
+  "s08": [
+    {
+      "text": "reading",
+      "dep": "ROOT",
+      "pos": "VERB"
+    }
+  ]
+}

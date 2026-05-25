@@ -1,0 +1,6 @@
+# Pinned reference environment for differential testing against Python spaCy.
+# Any change to these pins is a release-blocking decision — see UPSTREAM workflow.
+spacy==3.8.14
+# spacy transitively pins: thinc, cython-blis, numpy, srsly, etc.
+# Lock them by running `pip freeze > testharness/requirements-ref.lock.txt` after
+# initial install on each new arch.

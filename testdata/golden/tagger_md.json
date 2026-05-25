@@ -1,0 +1,358 @@
+{
+  "s01": [
+    {
+      "text": "The",
+      "tag": "DT",
+      "pos": "DET"
+    },
+    {
+      "text": "quick",
+      "tag": "JJ",
+      "pos": "ADJ"
+    },
+    {
+      "text": "brown",
+      "tag": "JJ",
+      "pos": "ADJ"
+    },
+    {
+      "text": "fox",
+      "tag": "NN",
+      "pos": "NOUN"
+    },
+    {
+      "text": "jumps",
+      "tag": "VBZ",
+      "pos": "VERB"
+    },
+    {
+      "text": "over",
+      "tag": "IN",
+      "pos": "ADP"
+    },
+    {
+      "text": "the",
+      "tag": "DT",
+      "pos": "DET"
+    },
+    {
+      "text": "lazy",
+      "tag": "JJ",
+      "pos": "ADJ"
+    },
+    {
+      "text": "dog",
+      "tag": "NN",
+      "pos": "NOUN"
+    },
+    {
+      "text": ".",
+      "tag": ".",
+      "pos": "PUNCT"
+    }
+  ],
+  "s02": [
+    {
+      "text": "She",
+      "tag": "PRP",
+      "pos": "PRON"
+    },
+    {
+      "text": "sells",
+      "tag": "VBZ",
+      "pos": "VERB"
+    },
+    {
+      "text": "seashells",
+      "tag": "NNS",
+      "pos": "NOUN"
+    },
+    {
+      "text": "by",
+      "tag": "IN",
+      "pos": "ADP"
+    },
+    {
+      "text": "the",
+      "tag": "DT",
+      "pos": "DET"
+    },
+    {
+      "text": "seashore",
+      "tag": "NN",
+      "pos": "NOUN"
+    },
+    {
+      "text": ".",
+      "tag": ".",
+      "pos": "PUNCT"
+    }
+  ],
+  "s03": [
+    {
+      "text": "I",
+      "tag": "PRP",
+      "pos": "PRON"
+    },
+    {
+      "text": "do",
+      "tag": "VBP",
+      "pos": "AUX"
+    },
+    {
+      "text": "not",
+      "tag": "RB",
+      "pos": "PART"
+    },
+    {
+      "text": "like",
+      "tag": "VB",
+      "pos": "VERB"
+    },
+    {
+      "text": "green",
+      "tag": "JJ",
+      "pos": "ADJ"
+    },
+    {
+      "text": "eggs",
+      "tag": "NNS",
+      "pos": "NOUN"
+    },
+    {
+      "text": "and",
+      "tag": "CC",
+      "pos": "CCONJ"
+    },
+    {
+      "text": "ham",
+      "tag": "NN",
+      "pos": "NOUN"
+    },
+    {
+      "text": ".",
+      "tag": ".",
+      "pos": "PUNCT"
+    }
+  ],
+  "s04": [
+    {
+      "text": "Apple",
+      "tag": "NNP",
+      "pos": "PROPN"
+    },
+    {
+      "text": "is",
+      "tag": "VBZ",
+      "pos": "AUX"
+    },
+    {
+      "text": "looking",
+      "tag": "VBG",
+      "pos": "VERB"
+    },
+    {
+      "text": "at",
+      "tag": "IN",
+      "pos": "ADP"
+    },
+    {
+      "text": "buying",
+      "tag": "VBG",
+      "pos": "VERB"
+    },
+    {
+      "text": "U.K.",
+      "tag": "NNP",
+      "pos": "PROPN"
+    },
+    {
+      "text": "startup",
+      "tag": "NN",
+      "pos": "NOUN"
+    },
+    {
+      "text": "for",
+      "tag": "IN",
+      "pos": "ADP"
+    },
+    {
+      "text": "$",
+      "tag": "$",
+      "pos": "SYM"
+    },
+    {
+      "text": "1",
+      "tag": "CD",
+      "pos": "NUM"
+    },
+    {
+      "text": "billion",
+      "tag": "CD",
+      "pos": "NUM"
+    },
+    {
+      "text": ".",
+      "tag": ".",
+      "pos": "PUNCT"
+    }
+  ],
+  "s05": [
+    {
+      "text": "Do",
+      "tag": "VB",
+      "pos": "AUX"
+    },
+    {
+      "text": "n't",
+      "tag": "RB",
+      "pos": "PART"
+    },
+    {
+      "text": "go",
+      "tag": "VB",
+      "pos": "VERB"
+    },
+    {
+      "text": "to",
+      "tag": "IN",
+      "pos": "ADP"
+    },
+    {
+      "text": "the",
+      "tag": "DT",
+      "pos": "DET"
+    },
+    {
+      "text": "U.S.A.",
+      "tag": "NNP",
+      "pos": "PROPN"
+    },
+    {
+      "text": "today",
+      "tag": "NN",
+      "pos": "NOUN"
+    },
+    {
+      "text": "!",
+      "tag": ".",
+      "pos": "PUNCT"
+    }
+  ],
+  "s06": [
+    {
+      "text": "The",
+      "tag": "DT",
+      "pos": "DET"
+    },
+    {
+      "text": "cat",
+      "tag": "NN",
+      "pos": "NOUN"
+    },
+    {
+      "text": "sat",
+      "tag": "VBD",
+      "pos": "VERB"
+    },
+    {
+      "text": "on",
+      "tag": "IN",
+      "pos": "ADP"
+    },
+    {
+      "text": "the",
+      "tag": "DT",
+      "pos": "DET"
+    },
+    {
+      "text": "mat",
+      "tag": "NN",
+      "pos": "NOUN"
+    },
+    {
+      "text": ".",
+      "tag": ".",
+      "pos": "PUNCT"
+    }
+  ],
+  "s07": [
+    {
+      "text": "John",
+      "tag": "NNP",
+      "pos": "PROPN"
+    },
+    {
+      "text": "ran",
+      "tag": "VBD",
+      "pos": "VERB"
+    },
+    {
+      "text": "faster",
+      "tag": "RBR",
+      "pos": "ADV"
+    },
+    {
+      "text": "than",
+      "tag": "IN",
+      "pos": "SCONJ"
+    },
+    {
+      "text": "Mary",
+      "tag": "NNP",
+      "pos": "PROPN"
+    },
+    {
+      "text": "did",
+      "tag": "VBD",
+      "pos": "VERB"
+    },
+    {
+      "text": ".",
+      "tag": ".",
+      "pos": "PUNCT"
+    }
+  ],
+  "s08": [
+    {
+      "text": "Children",
+      "tag": "NNS",
+      "pos": "NOUN"
+    },
+    {
+      "text": "are",
+      "tag": "VBP",
+      "pos": "AUX"
+    },
+    {
+      "text": "reading",
+      "tag": "VBG",
+      "pos": "VERB"
+    },
+    {
+      "text": "books",
+      "tag": "NNS",
+      "pos": "NOUN"
+    },
+    {
+      "text": "in",
+      "tag": "IN",
+      "pos": "ADP"
+    },
+    {
+      "text": "the",
+      "tag": "DT",
+      "pos": "DET"
+    },
+    {
+      "text": "library",
+      "tag": "NN",
+      "pos": "NOUN"
+    },
+    {
+      "text": ".",
+      "tag": ".",
+      "pos": "PUNCT"
+    }
+  ]
+}

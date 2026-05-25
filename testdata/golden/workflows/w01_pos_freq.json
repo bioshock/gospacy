@@ -1,0 +1,69 @@
+{
+  "s01": {
+    "DET": 2,
+    "ADJ": 3,
+    "NOUN": 2,
+    "VERB": 1,
+    "ADP": 1,
+    "PUNCT": 1
+  },
+  "s02": {
+    "PRON": 1,
+    "VERB": 1,
+    "NOUN": 2,
+    "ADP": 1,
+    "DET": 1,
+    "PUNCT": 1
+  },
+  "s03": {
+    "PRON": 1,
+    "AUX": 1,
+    "PART": 1,
+    "VERB": 1,
+    "ADJ": 1,
+    "NOUN": 2,
+    "CCONJ": 1,
+    "PUNCT": 1
+  },
+  "s04": {
+    "PROPN": 2,
+    "AUX": 1,
+    "VERB": 3,
+    "ADP": 2,
+    "SYM": 1,
+    "NUM": 2,
+    "PUNCT": 1
+  },
+  "s05": {
+    "AUX": 1,
+    "PART": 1,
+    "VERB": 1,
+    "ADP": 1,
+    "DET": 1,
+    "PROPN": 1,
+    "NOUN": 1,
+    "PUNCT": 1
+  },
+  "s06": {
+    "DET": 2,
+    "NOUN": 2,
+    "VERB": 1,
+    "ADP": 1,
+    "PUNCT": 1
+  },
+  "s07": {
+    "PROPN": 2,
+    "VERB": 2,
+    "ADV": 1,
+    "SCONJ": 1,
+    "PUNCT": 1
+  },
+  "s08": {
+    "NOUN": 3,
+    "AUX": 1,
+    "VERB": 1,
+    "ADP": 1,
+    "DET": 1,
+    "PUNCT": 1
+  }
+}

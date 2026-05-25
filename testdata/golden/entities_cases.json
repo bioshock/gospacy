@@ -1,0 +1,358 @@
+{
+  "s01": [
+    {
+      "text": "The",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "quick",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "brown",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "fox",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "jumps",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "over",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "the",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "lazy",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "dog",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": ".",
+      "ent_iob": "O",
+      "ent_type": ""
+    }
+  ],
+  "s02": [
+    {
+      "text": "She",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "sells",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "seashells",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "by",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "the",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "seashore",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": ".",
+      "ent_iob": "O",
+      "ent_type": ""
+    }
+  ],
+  "s03": [
+    {
+      "text": "I",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "do",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "not",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "like",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "green",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "eggs",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "and",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "ham",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": ".",
+      "ent_iob": "O",
+      "ent_type": ""
+    }
+  ],
+  "s04": [
+    {
+      "text": "Apple",
+      "ent_iob": "B",
+      "ent_type": "ORG"
+    },
+    {
+      "text": "is",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "looking",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "at",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "buying",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "U.K.",
+      "ent_iob": "B",
+      "ent_type": "GPE"
+    },
+    {
+      "text": "startup",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "for",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "$",
+      "ent_iob": "B",
+      "ent_type": "MONEY"
+    },
+    {
+      "text": "1",
+      "ent_iob": "I",
+      "ent_type": "MONEY"
+    },
+    {
+      "text": "billion",
+      "ent_iob": "I",
+      "ent_type": "MONEY"
+    },
+    {
+      "text": ".",
+      "ent_iob": "O",
+      "ent_type": ""
+    }
+  ],
+  "s05": [
+    {
+      "text": "Do",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "n't",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "go",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "to",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "the",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "U.S.A.",
+      "ent_iob": "B",
+      "ent_type": "GPE"
+    },
+    {
+      "text": "today",
+      "ent_iob": "B",
+      "ent_type": "DATE"
+    },
+    {
+      "text": "!",
+      "ent_iob": "O",
+      "ent_type": ""
+    }
+  ],
+  "s06": [
+    {
+      "text": "The",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "cat",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "sat",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "on",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "the",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "mat",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": ".",
+      "ent_iob": "O",
+      "ent_type": ""
+    }
+  ],
+  "s07": [
+    {
+      "text": "John",
+      "ent_iob": "B",
+      "ent_type": "PERSON"
+    },
+    {
+      "text": "ran",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "faster",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "than",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "Mary",
+      "ent_iob": "B",
+      "ent_type": "PERSON"
+    },
+    {
+      "text": "did",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": ".",
+      "ent_iob": "O",
+      "ent_type": ""
+    }
+  ],
+  "s08": [
+    {
+      "text": "Children",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "are",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "reading",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "books",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "in",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "the",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": "library",
+      "ent_iob": "O",
+      "ent_type": ""
+    },
+    {
+      "text": ".",
+      "ent_iob": "O",
+      "ent_type": ""
+    }
+  ]
+}

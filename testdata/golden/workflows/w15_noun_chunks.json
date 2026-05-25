@@ -1,0 +1,108 @@
+{
+  "s01": [
+    {
+      "start": 0,
+      "end": 4,
+      "text": "The quick brown fox"
+    },
+    {
+      "start": 6,
+      "end": 9,
+      "text": "the lazy dog"
+    }
+  ],
+  "s02": [
+    {
+      "start": 0,
+      "end": 1,
+      "text": "She"
+    },
+    {
+      "start": 2,
+      "end": 3,
+      "text": "seashells"
+    },
+    {
+      "start": 4,
+      "end": 6,
+      "text": "the seashore"
+    }
+  ],
+  "s03": [
+    {
+      "start": 0,
+      "end": 1,
+      "text": "I"
+    },
+    {
+      "start": 4,
+      "end": 6,
+      "text": "green eggs"
+    },
+    {
+      "start": 7,
+      "end": 8,
+      "text": "ham"
+    }
+  ],
+  "s04": [
+    {
+      "start": 0,
+      "end": 1,
+      "text": "Apple"
+    },
+    {
+      "start": 5,
+      "end": 6,
+      "text": "U.K."
+    }
+  ],
+  "s05": [
+    {
+      "start": 4,
+      "end": 6,
+      "text": "the U.S.A."
+    }
+  ],
+  "s06": [
+    {
+      "start": 0,
+      "end": 2,
+      "text": "The cat"
+    },
+    {
+      "start": 4,
+      "end": 6,
+      "text": "the mat"
+    }
+  ],
+  "s07": [
+    {
+      "start": 0,
+      "end": 1,
+      "text": "John"
+    },
+    {
+      "start": 4,
+      "end": 5,
+      "text": "Mary"
+    }
+  ],
+  "s08": [
+    {
+      "start": 0,
+      "end": 1,
+      "text": "Children"
+    },
+    {
+      "start": 3,
+      "end": 4,
+      "text": "books"
+    },
+    {
+      "start": 5,
+      "end": 7,
+      "text": "the library"
+    }
+  ]
+}

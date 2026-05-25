@@ -1,0 +1,12 @@
+{
+  "cases": [
+    {"id": "s01", "text": "The quick brown fox jumps over the lazy dog."},
+    {"id": "s02", "text": "She sells seashells by the seashore."},
+    {"id": "s03", "text": "I do not like green eggs and ham."},
+    {"id": "s04", "text": "Apple is looking at buying U.K. startup for $1 billion."},
+    {"id": "s05", "text": "Don't go to the U.S.A. today!"},
+    {"id": "s06", "text": "The cat sat on the mat."},
+    {"id": "s07", "text": "John ran faster than Mary did."},
+    {"id": "s08", "text": "Children are reading books in the library."}
+  ]
+}

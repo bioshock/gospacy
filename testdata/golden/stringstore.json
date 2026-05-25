@@ -1,0 +1,60 @@
+{
+  "strings": [
+    {
+      "text": "",
+      "hash": "0"
+    },
+    {
+      "text": "a",
+      "hash": "11901859001352538922"
+    },
+    {
+      "text": "the",
+      "hash": "7425985699627899538"
+    },
+    {
+      "text": "spaCy",
+      "hash": "6772933960739496234"
+    },
+    {
+      "text": "hello world",
+      "hash": "2758594965276909933"
+    },
+    {
+      "text": "ünïcødé",
+      "hash": "1287214212516472143"
+    },
+    {
+      "text": "VERB",
+      "hash": "100"
+    },
+    {
+      "text": "NOUN",
+      "hash": "92"
+    },
+    {
+      "text": "Det",
+      "hash": "10849022228017431414"
+    },
+    {
+      "text": "the quick brown fox jumps over the lazy dog",
+      "hash": "10394782959448686141"
+    },
+    {
+      "text": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "hash": "2369678262386279785"
+    },
+    {
+      "text": "—",
+      "hash": "13657828488461764581"
+    },
+    {
+      "text": "'s",
+      "hash": "16428057658620181782"
+    },
+    {
+      "text": "n't",
+      "hash": "2043519015752540944"
+    }
+  ]
+}

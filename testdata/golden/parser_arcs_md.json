@@ -1,0 +1,494 @@
+{
+  "s01": [
+    {
+      "i": 0,
+      "text": "The",
+      "head": 3,
+      "dep": "det",
+      "pos": "DET"
+    },
+    {
+      "i": 1,
+      "text": "quick",
+      "head": 3,
+      "dep": "amod",
+      "pos": "ADJ"
+    },
+    {
+      "i": 2,
+      "text": "brown",
+      "head": 3,
+      "dep": "amod",
+      "pos": "ADJ"
+    },
+    {
+      "i": 3,
+      "text": "fox",
+      "head": 4,
+      "dep": "nsubj",
+      "pos": "NOUN"
+    },
+    {
+      "i": 4,
+      "text": "jumps",
+      "head": 4,
+      "dep": "ROOT",
+      "pos": "VERB"
+    },
+    {
+      "i": 5,
+      "text": "over",
+      "head": 4,
+      "dep": "prep",
+      "pos": "ADP"
+    },
+    {
+      "i": 6,
+      "text": "the",
+      "head": 8,
+      "dep": "det",
+      "pos": "DET"
+    },
+    {
+      "i": 7,
+      "text": "lazy",
+      "head": 8,
+      "dep": "amod",
+      "pos": "ADJ"
+    },
+    {
+      "i": 8,
+      "text": "dog",
+      "head": 5,
+      "dep": "pobj",
+      "pos": "NOUN"
+    },
+    {
+      "i": 9,
+      "text": ".",
+      "head": 4,
+      "dep": "punct",
+      "pos": "PUNCT"
+    }
+  ],
+  "s02": [
+    {
+      "i": 0,
+      "text": "She",
+      "head": 1,
+      "dep": "nsubj",
+      "pos": "PRON"
+    },
+    {
+      "i": 1,
+      "text": "sells",
+      "head": 1,
+      "dep": "ROOT",
+      "pos": "VERB"
+    },
+    {
+      "i": 2,
+      "text": "seashells",
+      "head": 1,
+      "dep": "dobj",
+      "pos": "NOUN"
+    },
+    {
+      "i": 3,
+      "text": "by",
+      "head": 1,
+      "dep": "prep",
+      "pos": "ADP"
+    },
+    {
+      "i": 4,
+      "text": "the",
+      "head": 5,
+      "dep": "det",
+      "pos": "DET"
+    },
+    {
+      "i": 5,
+      "text": "seashore",
+      "head": 3,
+      "dep": "pobj",
+      "pos": "NOUN"
+    },
+    {
+      "i": 6,
+      "text": ".",
+      "head": 1,
+      "dep": "punct",
+      "pos": "PUNCT"
+    }
+  ],
+  "s03": [
+    {
+      "i": 0,
+      "text": "I",
+      "head": 3,
+      "dep": "nsubj",
+      "pos": "PRON"
+    },
+    {
+      "i": 1,
+      "text": "do",
+      "head": 3,
+      "dep": "aux",
+      "pos": "AUX"
+    },
+    {
+      "i": 2,
+      "text": "not",
+      "head": 3,
+      "dep": "neg",
+      "pos": "PART"
+    },
+    {
+      "i": 3,
+      "text": "like",
+      "head": 3,
+      "dep": "ROOT",
+      "pos": "VERB"
+    },
+    {
+      "i": 4,
+      "text": "green",
+      "head": 5,
+      "dep": "amod",
+      "pos": "ADJ"
+    },
+    {
+      "i": 5,
+      "text": "eggs",
+      "head": 3,
+      "dep": "dobj",
+      "pos": "NOUN"
+    },
+    {
+      "i": 6,
+      "text": "and",
+      "head": 5,
+      "dep": "cc",
+      "pos": "CCONJ"
+    },
+    {
+      "i": 7,
+      "text": "ham",
+      "head": 5,
+      "dep": "conj",
+      "pos": "NOUN"
+    },
+    {
+      "i": 8,
+      "text": ".",
+      "head": 3,
+      "dep": "punct",
+      "pos": "PUNCT"
+    }
+  ],
+  "s04": [
+    {
+      "i": 0,
+      "text": "Apple",
+      "head": 2,
+      "dep": "nsubj",
+      "pos": "PROPN"
+    },
+    {
+      "i": 1,
+      "text": "is",
+      "head": 2,
+      "dep": "aux",
+      "pos": "AUX"
+    },
+    {
+      "i": 2,
+      "text": "looking",
+      "head": 2,
+      "dep": "ROOT",
+      "pos": "VERB"
+    },
+    {
+      "i": 3,
+      "text": "at",
+      "head": 2,
+      "dep": "prep",
+      "pos": "ADP"
+    },
+    {
+      "i": 4,
+      "text": "buying",
+      "head": 3,
+      "dep": "pcomp",
+      "pos": "VERB"
+    },
+    {
+      "i": 5,
+      "text": "U.K.",
+      "head": 6,
+      "dep": "compound",
+      "pos": "PROPN"
+    },
+    {
+      "i": 6,
+      "text": "startup",
+      "head": 4,
+      "dep": "dobj",
+      "pos": "NOUN"
+    },
+    {
+      "i": 7,
+      "text": "for",
+      "head": 6,
+      "dep": "prep",
+      "pos": "ADP"
+    },
+    {
+      "i": 8,
+      "text": "$",
+      "head": 10,
+      "dep": "quantmod",
+      "pos": "SYM"
+    },
+    {
+      "i": 9,
+      "text": "1",
+      "head": 10,
+      "dep": "compound",
+      "pos": "NUM"
+    },
+    {
+      "i": 10,
+      "text": "billion",
+      "head": 7,
+      "dep": "pobj",
+      "pos": "NUM"
+    },
+    {
+      "i": 11,
+      "text": ".",
+      "head": 2,
+      "dep": "punct",
+      "pos": "PUNCT"
+    }
+  ],
+  "s05": [
+    {
+      "i": 0,
+      "text": "Do",
+      "head": 2,
+      "dep": "aux",
+      "pos": "AUX"
+    },
+    {
+      "i": 1,
+      "text": "n't",
+      "head": 2,
+      "dep": "neg",
+      "pos": "PART"
+    },
+    {
+      "i": 2,
+      "text": "go",
+      "head": 2,
+      "dep": "ROOT",
+      "pos": "VERB"
+    },
+    {
+      "i": 3,
+      "text": "to",
+      "head": 2,
+      "dep": "prep",
+      "pos": "ADP"
+    },
+    {
+      "i": 4,
+      "text": "the",
+      "head": 5,
+      "dep": "det",
+      "pos": "DET"
+    },
+    {
+      "i": 5,
+      "text": "U.S.A.",
+      "head": 3,
+      "dep": "pobj",
+      "pos": "PROPN"
+    },
+    {
+      "i": 6,
+      "text": "today",
+      "head": 2,
+      "dep": "npadvmod",
+      "pos": "NOUN"
+    },
+    {
+      "i": 7,
+      "text": "!",
+      "head": 2,
+      "dep": "punct",
+      "pos": "PUNCT"
+    }
+  ],
+  "s06": [
+    {
+      "i": 0,
+      "text": "The",
+      "head": 1,
+      "dep": "det",
+      "pos": "DET"
+    },
+    {
+      "i": 1,
+      "text": "cat",
+      "head": 2,
+      "dep": "nsubj",
+      "pos": "NOUN"
+    },
+    {
+      "i": 2,
+      "text": "sat",
+      "head": 2,
+      "dep": "ROOT",
+      "pos": "VERB"
+    },
+    {
+      "i": 3,
+      "text": "on",
+      "head": 2,
+      "dep": "prep",
+      "pos": "ADP"
+    },
+    {
+      "i": 4,
+      "text": "the",
+      "head": 5,
+      "dep": "det",
+      "pos": "DET"
+    },
+    {
+      "i": 5,
+      "text": "mat",
+      "head": 3,
+      "dep": "pobj",
+      "pos": "NOUN"
+    },
+    {
+      "i": 6,
+      "text": ".",
+      "head": 2,
+      "dep": "punct",
+      "pos": "PUNCT"
+    }
+  ],
+  "s07": [
+    {
+      "i": 0,
+      "text": "John",
+      "head": 1,
+      "dep": "nsubj",
+      "pos": "PROPN"
+    },
+    {
+      "i": 1,
+      "text": "ran",
+      "head": 1,
+      "dep": "ROOT",
+      "pos": "VERB"
+    },
+    {
+      "i": 2,
+      "text": "faster",
+      "head": 1,
+      "dep": "advmod",
+      "pos": "ADV"
+    },
+    {
+      "i": 3,
+      "text": "than",
+      "head": 5,
+      "dep": "mark",
+      "pos": "SCONJ"
+    },
+    {
+      "i": 4,
+      "text": "Mary",
+      "head": 5,
+      "dep": "nsubj",
+      "pos": "PROPN"
+    },
+    {
+      "i": 5,
+      "text": "did",
+      "head": 2,
+      "dep": "advcl",
+      "pos": "VERB"
+    },
+    {
+      "i": 6,
+      "text": ".",
+      "head": 1,
+      "dep": "punct",
+      "pos": "PUNCT"
+    }
+  ],
+  "s08": [
+    {
+      "i": 0,
+      "text": "Children",
+      "head": 2,
+      "dep": "nsubj",
+      "pos": "NOUN"
+    },
+    {
+      "i": 1,
+      "text": "are",
+      "head": 2,
+      "dep": "aux",
+      "pos": "AUX"
+    },
+    {
+      "i": 2,
+      "text": "reading",
+      "head": 2,
+      "dep": "ROOT",
+      "pos": "VERB"
+    },
+    {
+      "i": 3,
+      "text": "books",
+      "head": 2,
+      "dep": "dobj",
+      "pos": "NOUN"
+    },
+    {
+      "i": 4,
+      "text": "in",
+      "head": 2,
+      "dep": "prep",
+      "pos": "ADP"
+    },
+    {
+      "i": 5,
+      "text": "the",
+      "head": 6,
+      "dep": "det",
+      "pos": "DET"
+    },
+    {
+      "i": 6,
+      "text": "library",
+      "head": 4,
+      "dep": "pobj",
+      "pos": "NOUN"
+    },
+    {
+      "i": 7,
+      "text": ".",
+      "head": 2,
+      "dep": "punct",
+      "pos": "PUNCT"
+    }
+  ]
+}

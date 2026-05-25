@@ -1,0 +1,67 @@
+name: ci
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  test:
+    name: go test (pure-Go)
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        go-version: ["1.23.x"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: ${{ matrix.go-version }}
+      - run: go build ./...
+      - run: go test ./...
+      - run: go build -tags blis ./...
+      - run: go test -tags blis ./nn/backend/blis/...
+
+  lint:
+    name: golangci-lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.23.x"
+      - uses: golangci/golangci-lint-action@v6
+        with:
+          version: latest
+
+  diff-smoke:
+    name: diff-test smoke (Python ref + Go)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.23.x"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('testharness/requirements-ref.txt') }}
+      - name: bootstrap ref env
+        run: make bootstrap-ref
+      - name: download assets
+        run: make download-assets
+      - name: regenerate fixtures
+        run: |
+          testharness/.venv/bin/python testharness/dump_all.py
+          testharness/.venv/bin/python testharness/dump_ops.py all
+          testharness/.venv/bin/python testharness/dump_murmur.py
+      # The full 10k goldens are large; we only need to verify the regeneration
+      # works. Don't fail CI if the in-repo samples differ from regenerated
+      # ones (small floating-point churn in metrics is expected); just confirm
+      # `go test` still passes after regeneration.
+      - name: go test
+        run: go test ./...

@@ -1,0 +1,55 @@
+{
+  "s01": [],
+  "s02": [],
+  "s03": [],
+  "s04": [
+    {
+      "start": 0,
+      "end": 1,
+      "label": "ORG",
+      "text": "Apple"
+    },
+    {
+      "start": 5,
+      "end": 6,
+      "label": "GPE",
+      "text": "U.K."
+    },
+    {
+      "start": 8,
+      "end": 11,
+      "label": "MONEY",
+      "text": "$1 billion"
+    }
+  ],
+  "s05": [
+    {
+      "start": 5,
+      "end": 6,
+      "label": "GPE",
+      "text": "U.S.A."
+    },
+    {
+      "start": 6,
+      "end": 7,
+      "label": "DATE",
+      "text": "today"
+    }
+  ],
+  "s06": [],
+  "s07": [
+    {
+      "start": 0,
+      "end": 1,
+      "label": "PERSON",
+      "text": "John"
+    },
+    {
+      "start": 4,
+      "end": 5,
+      "label": "PERSON",
+      "text": "Mary"
+    }
+  ],
+  "s08": []
+}
