@@ -1,6 +1,7 @@
 package parserinternals
 
 import (
+	"os"
 	"path/filepath"
 	"testing"
 
@@ -11,6 +12,9 @@ import (
 // verifies n_moves, the action mix, and the well-known SHIFT/BREAK-ROOT entries.
 func TestLoadMoves_BundlePayload(t *testing.T) {
 	path := filepath.Join("..", "..", "testdata", "models", "en_core_web_sm", "parser", "moves")
+	if _, err := os.Stat(path); err != nil {
+		t.Skip("en_core_web_sm not present; run testharness/download_assets.sh")
+	}
 	moves, err := LoadMoves(path)
 	require.NoError(t, err)
 

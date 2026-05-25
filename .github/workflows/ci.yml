@@ -32,7 +32,10 @@ jobs:
           go-version: "1.23.x"
       - uses: golangci/golangci-lint-action@v6
         with:
-          version: latest
+          # Pinned to v1 because .golangci.yml uses the v1 schema
+          # (disable-all + enable list). v2 (released Mar 2025) changed
+          # the config format. Migrate the config to bump.
+          version: v1.64.8
 
   diff-smoke:
     name: diff-test smoke (Python ref + Go)
@@ -54,6 +57,10 @@ jobs:
         run: make bootstrap-ref
       - name: download assets
         run: make download-assets
+      - name: build tokenizer-10k corpus
+        # dump_all.py → dump_tokens.py expects testdata/corpora/tokenizer-10k.txt,
+        # which is built from the downloaded UD-EWT splits (NOT downloaded directly).
+        run: testharness/.venv/bin/python testharness/build_tokenizer_corpus.py
       - name: regenerate fixtures
         run: |
           testharness/.venv/bin/python testharness/dump_all.py

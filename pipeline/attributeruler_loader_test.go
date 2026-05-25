@@ -26,10 +26,12 @@ func TestAttributeRuler_LoadPatterns(t *testing.T) {
 }
 
 func TestAttributeRuler_PatternFile_Exists(t *testing.T) {
-	require.FileExists(t, filepath.Join(
-		"..", "testdata", "models", "en_core_web_sm",
-		"attribute_ruler", "patterns",
-	))
+	path := filepath.Join("..", "testdata", "models", "en_core_web_sm",
+		"attribute_ruler", "patterns")
+	if _, err := os.Stat(path); err != nil {
+		t.Skip("en_core_web_sm not present; run testharness/download_assets.sh")
+	}
+	require.FileExists(t, path)
 }
 
 // TestLoaderRecognisesDEP — pattern with DEP=str loads with Dep set and
