@@ -33,3 +33,4 @@ upstream/
 /load-thinc-model
 /tokenize
 /bench
+/comprehensive-analyzer
