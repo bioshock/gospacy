@@ -23,10 +23,11 @@ import (
 	"math"
 	"os"
 	"strings"
-	"unicode"
 
 	"github.com/bioshock/gospacy/v3/bundle"
 	"github.com/bioshock/gospacy/v3/doc"
+	"github.com/bioshock/gospacy/v3/internal/lexflags"
+	"github.com/bioshock/gospacy/v3/matcher"
 	"github.com/bioshock/gospacy/v3/vocab"
 )
 
@@ -71,7 +72,7 @@ func (a *analyzer) analyzeTokens(d *doc.Doc) {
 			truncate(ss.LookupOrEmpty(tok.Lemma), 15),
 			ss.LookupOrEmpty(tok.POS),
 			ss.LookupOrEmpty(tok.Tag),
-			isAlpha(tok.Text),
+			lexflags.IsAlpha(tok.Text),
 			tok.IsStop(d.Vocab),
 		)
 	}
@@ -142,43 +143,41 @@ func (a *analyzer) segmentSentences(d *doc.Doc) {
 	}
 }
 
-// runMatcher hand-rolls the Python Matcher pattern
+// runMatcher uses gospacy's matcher.Matcher (Tier 1, equality-only).
+// The two-alternative pattern handles "Artificial Intelligence"
+// (multi-token) and bare "AI" (single-token). Same-key overlap dedup
+// (longest-first) means the multi-token alt wins when both fire on
+// "Artificial Intelligence".
 //
-//	[{"LOWER": {"IN": ["artificial", "ai"]}}, {"LOWER": "intelligence", "OP": "?"}]
-//
-// using a direct token-walk. The generic spacy.matcher.Matcher is
-// listed in NOT_YET_PORTED.md (Matcher / PhraseMatcher / EntityRuler
-// are out of scope). For the simple patterns most consumers actually
-// need, a hand-rolled scan over Token.Lower (compared against
-// pre-hashed lowercase strings) is what we recommend. Two cheap calls
-// to StringStore.Hash give us hash-equality comparisons in the loop
-// instead of map lookups.
+// Quantifier OPs (?, *, +) are NOT_YET_PORTED — see Matcher Tier 2.
+// For Tier 1 we model "optional Intelligence" as two alternatives.
 func (a *analyzer) runMatcher(d *doc.Doc) {
 	fmt.Println("\n--- 6. Rule-based Matching ---")
 
-	ss := d.Vocab.StringStore()
-	hArtificial := ss.Hash("artificial")
-	hAI := ss.Hash("ai")
-	hIntelligence := ss.Hash("intelligence")
-
-	var found bool
-	for i := 0; i < d.NumTokens(); i++ {
-		tok := d.Tokens[i]
-		if tok.Lower != hArtificial && tok.Lower != hAI {
-			continue
-		}
-		// Optionally consume the next token if it's "intelligence".
-		end := i + 1
-		if end < d.NumTokens() && d.Tokens[end].Lower == hIntelligence {
-			end++
-		}
-		fmt.Printf("Match Rule: %-12s | Matched Text: %q\n",
-			"AI_PATTERN", spanText(d, i, end))
-		found = true
-		i = end - 1 // skip the consumed "intelligence" so we don't re-emit
+	m := matcher.New(d.Vocab)
+	if err := m.Add("AI_PATTERN",
+		// Alt 1: "Artificial Intelligence" or "AI Intelligence"
+		[]matcher.TokenSpec{
+			{LowerIn: []string{"artificial", "ai"}},
+			{Lower: "intelligence"},
+		},
+		// Alt 2: bare "AI" or bare "Artificial"
+		[]matcher.TokenSpec{
+			{LowerIn: []string{"artificial", "ai"}},
+		},
+	); err != nil {
+		fmt.Printf("Matcher.Add failed: %v\n", err)
+		return
 	}
-	if !found {
+
+	hits := m.Matches(d)
+	if len(hits) == 0 {
 		fmt.Println("No custom matches found.")
+		return
+	}
+	for _, hit := range hits {
+		fmt.Printf("Match Rule: %-12s | Matched Text: %q\n",
+			hit.Key, spanText(d, hit.Start, hit.End))
 	}
 }
 
@@ -293,20 +292,6 @@ func cosine(a, b []float32) float64 {
 		return 0
 	}
 	return dot / (math.Sqrt(na) * math.Sqrt(nb))
-}
-
-// isAlpha mirrors Token.is_alpha — true iff every rune in s is a unicode
-// letter (and s is non-empty).
-func isAlpha(s string) bool {
-	if s == "" {
-		return false
-	}
-	for _, r := range s {
-		if !unicode.IsLetter(r) {
-			return false
-		}
-	}
-	return true
 }
 
 // truncate cuts s to at most n bytes (no rune-awareness needed; the

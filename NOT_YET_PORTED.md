@@ -15,6 +15,37 @@ explicitly outside that line.
 
 ## Components
 
+### Matcher — Tier 1 shipped, Tier 2 + Tier 3 deferred
+
+- **What:** `spacy.matcher.Matcher` — rule-based token-pattern matcher
+  used by `EntityRuler`, custom dependency rules, and many production
+  spaCy pipelines.
+- **Status:** **Tier 1 (equality-only) shipped in v3.8.14-port.2** as
+  the public `github.com/bioshock/gospacy/v3/matcher` package. Covers
+  ORTH / LOWER / TAG / POS / DEP / LEMMA / ENT_TYPE scalar + `{IN}` +
+  `{NOT_IN}` (TAG / DEP) + `{REGEX}` (LOWER only); IS_SPACE / IS_STOP
+  / IS_ALPHA / IS_PUNCT / IS_DIGIT / LIKE_NUM boolean flags; named
+  patterns; same-key alternatives; same-key longest-first overlap
+  dedup. Multi-token sequence: every TokenSpec matches exactly one
+  position.
+- **What's deferred:**
+  - **Tier 2 — quantifier operators** (`OP: "?" / "*" / "+" / "!" /
+    "{n,m}"`). Requires a Thompson-NFA build over token specs;
+    ~700 lines + ~15 more Python differential patterns. Defer until
+    a consumer files a concrete need.
+  - **Tier 3 — `PhraseMatcher`** (trie-backed fast literal phrase
+    matching), **`FUZZY`** value form (Levenshtein with token-aware
+    edit budget), **`Doc._.foo` extension attrs** (requires a new
+    Doc.user_data infrastructure first), numeric comparison ops
+    (`==`, `>`, etc. on `LENGTH` / `prob` / `rank`).
+- **Where it would live:** `matcher/` (current), with `matcher/nfa.go`
+  for Tier 2 and `matcher/phrase.go` / `matcher/fuzzy.go` for Tier 3.
+- **Rationale:** 95% of real-world Matcher usage is equality + IN /
+  NOT_IN / REGEX. Tier 1 unlocks that for ~1 day of work and reuses
+  the AttributeRuler loader machinery (`internal/patternspec`).
+  Tier 2/3 land when a concrete consumer hits a quantifier or
+  PhraseMatcher gap.
+
 ### Entity Linker
 
 - **What:** `spacy.pipeline.entity_linker.EntityLinker` — disambiguate entities

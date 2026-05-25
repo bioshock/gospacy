@@ -1,0 +1,793 @@
+{
+  "spacy_version": "3.8.14",
+  "model": "en_core_web_sm",
+  "patterns": [
+    {
+      "key": "APPLE_ORTH",
+      "pattern": [
+        [
+          {
+            "ORTH": "Apple"
+          }
+        ]
+      ]
+    },
+    {
+      "key": "AI_LOWER",
+      "pattern": [
+        [
+          {
+            "LOWER": "ai"
+          }
+        ]
+      ]
+    },
+    {
+      "key": "NNP_TAG",
+      "pattern": [
+        [
+          {
+            "TAG": "NNP"
+          }
+        ]
+      ]
+    },
+    {
+      "key": "PROPN_POS",
+      "pattern": [
+        [
+          {
+            "POS": "PROPN"
+          }
+        ]
+      ]
+    },
+    {
+      "key": "DOBJ_DEP",
+      "pattern": [
+        [
+          {
+            "DEP": "dobj"
+          }
+        ]
+      ]
+    },
+    {
+      "key": "BUY_LEMMA",
+      "pattern": [
+        [
+          {
+            "LEMMA": "buy"
+          }
+        ]
+      ]
+    },
+    {
+      "key": "AI_LOWER_IN",
+      "pattern": [
+        [
+          {
+            "LOWER": {
+              "IN": [
+                "artificial",
+                "ai"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "key": "ORG_OR_GPE",
+      "pattern": [
+        [
+          {
+            "ENT_TYPE": {
+              "IN": [
+                "ORG",
+                "GPE"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "key": "TAG_NOT_VBZ",
+      "pattern": [
+        [
+          {
+            "TAG": {
+              "NOT_IN": [
+                "VBZ",
+                ""
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "key": "NEG_REGEX",
+      "pattern": [
+        [
+          {
+            "LOWER": {
+              "REGEX": "^n'?t$"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "key": "PUNCT_FLAG",
+      "pattern": [
+        [
+          {
+            "IS_PUNCT": true
+          }
+        ]
+      ]
+    },
+    {
+      "key": "LIKE_NUM",
+      "pattern": [
+        [
+          {
+            "LIKE_NUM": true
+          }
+        ]
+      ]
+    },
+    {
+      "key": "AI_PHRASE",
+      "pattern": [
+        [
+          {
+            "LOWER": "artificial"
+          },
+          {
+            "LOWER": "intelligence"
+          }
+        ]
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "text": "Apple Inc. is considering buying a U.K. startup for $1 billion.",
+      "matches": [
+        {
+          "key": "APPLE_ORTH",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "NNP_TAG",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "ORG_OR_GPE",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "PROPN_POS",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "NNP_TAG",
+          "start": 1,
+          "end": 2
+        },
+        {
+          "key": "ORG_OR_GPE",
+          "start": 1,
+          "end": 2
+        },
+        {
+          "key": "PROPN_POS",
+          "start": 1,
+          "end": 2
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 1,
+          "end": 2
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "key": "BUY_LEMMA",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "key": "DOBJ_DEP",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "key": "NNP_TAG",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "key": "ORG_OR_GPE",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "key": "PROPN_POS",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "key": "DOBJ_DEP",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 9,
+          "end": 10
+        },
+        {
+          "key": "LIKE_NUM",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "key": "LIKE_NUM",
+          "start": 11,
+          "end": 12
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 11,
+          "end": 12
+        },
+        {
+          "key": "PUNCT_FLAG",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "text": "Tim Cook announced the acquisition in London on Tuesday.",
+      "matches": [
+        {
+          "key": "NNP_TAG",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "PROPN_POS",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "NNP_TAG",
+          "start": 1,
+          "end": 2
+        },
+        {
+          "key": "PROPN_POS",
+          "start": 1,
+          "end": 2
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 1,
+          "end": 2
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 2,
+          "end": 3
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "key": "DOBJ_DEP",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "key": "NNP_TAG",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "key": "ORG_OR_GPE",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "key": "PROPN_POS",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "key": "NNP_TAG",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "key": "PROPN_POS",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "key": "PUNCT_FLAG",
+          "start": 9,
+          "end": 10
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "text": "Artificial Intelligence will play a massive role.",
+      "matches": [
+        {
+          "key": "AI_LOWER_IN",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "NNP_TAG",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "ORG_OR_GPE",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "PROPN_POS",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "AI_PHRASE",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "key": "NNP_TAG",
+          "start": 1,
+          "end": 2
+        },
+        {
+          "key": "ORG_OR_GPE",
+          "start": 1,
+          "end": 2
+        },
+        {
+          "key": "PROPN_POS",
+          "start": 1,
+          "end": 2
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 1,
+          "end": 2
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 2,
+          "end": 3
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "key": "DOBJ_DEP",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "key": "PUNCT_FLAG",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "text": "AI is transforming the modern tech landscape.",
+      "matches": [
+        {
+          "key": "AI_LOWER",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "AI_LOWER_IN",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "NNP_TAG",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "ORG_OR_GPE",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "PROPN_POS",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 2,
+          "end": 3
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "key": "DOBJ_DEP",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "key": "PUNCT_FLAG",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "text": "I don't know what you mean.",
+      "matches": [
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 1,
+          "end": 2
+        },
+        {
+          "key": "NEG_REGEX",
+          "start": 2,
+          "end": 3
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 2,
+          "end": 3
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "key": "DOBJ_DEP",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "key": "PUNCT_FLAG",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "text": "She bought twenty apples and 3 oranges.",
+      "matches": [
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "BUY_LEMMA",
+          "start": 1,
+          "end": 2
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 1,
+          "end": 2
+        },
+        {
+          "key": "LIKE_NUM",
+          "start": 2,
+          "end": 3
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 2,
+          "end": 3
+        },
+        {
+          "key": "DOBJ_DEP",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "key": "LIKE_NUM",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "key": "PUNCT_FLAG",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "text": "Hello, world!",
+      "matches": [
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "PUNCT_FLAG",
+          "start": 1,
+          "end": 2
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 1,
+          "end": 2
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 2,
+          "end": 3
+        },
+        {
+          "key": "PUNCT_FLAG",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "text": "He said: hello world.",
+      "matches": [
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 1,
+          "end": 2
+        },
+        {
+          "key": "PUNCT_FLAG",
+          "start": 2,
+          "end": 3
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 2,
+          "end": 3
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "key": "PUNCT_FLAG",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "key": "TAG_NOT_VBZ",
+          "start": 5,
+          "end": 6
+        }
+      ]
+    }
+  ]
+}

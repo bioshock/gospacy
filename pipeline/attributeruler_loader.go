@@ -6,6 +6,8 @@ import (
 	"regexp"
 
 	"github.com/vmihailenco/msgpack/v5"
+
+	"github.com/bioshock/gospacy/v3/internal/patternspec"
 )
 
 // arTokenSpec is one token in a pattern's pattern-list. Mirrors the
@@ -39,24 +41,6 @@ type arTokenSpec struct {
 	LowerRegex *regexp.Regexp
 }
 
-// extractRegexString unwraps {"REGEX": "<pattern>"}. Returns ("", false)
-// for anything else.
-func extractRegexString(v any) (string, bool) {
-	d, ok := v.(map[string]any)
-	if !ok {
-		return "", false
-	}
-	rxAny, ok := d["REGEX"]
-	if !ok || len(d) != 1 {
-		return "", false
-	}
-	s, ok := rxAny.(string)
-	if !ok {
-		return "", false
-	}
-	return s, true
-}
-
 // arAttrs is the {POS, MORPH, LEMMA, TAG} dict written to the matched token.
 type arAttrs struct {
 	POS   string
@@ -78,61 +62,15 @@ type arPattern struct {
 	Unsupported bool
 }
 
-// extractInList unwraps the spaCy Matcher set-membership form
-// {"IN": ["a", "b", ...]} into a flat []string. Returns (nil, false) for
-// anything else (including {"NOT_IN": ...}, {"REGEX": ...}, plain dicts,
-// numeric lists). Used by the per-key switch in loadAttributeRulerPatterns
-// to decide whether a pattern is gospacy-supported.
-func extractInList(v any) ([]string, bool) {
-	d, ok := v.(map[string]any)
-	if !ok {
-		return nil, false
-	}
-	inAny, ok := d["IN"]
-	if !ok || len(d) != 1 {
-		return nil, false
-	}
-	list, ok := inAny.([]any)
-	if !ok {
-		return nil, false
-	}
-	out := make([]string, 0, len(list))
-	for _, x := range list {
-		s, ok := x.(string)
-		if !ok {
-			return nil, false
-		}
-		out = append(out, s)
-	}
-	return out, true
-}
-
-// extractNotInList mirrors extractInList for the {"NOT_IN": [...]} form.
-// Used for TAG with negated set-membership (pattern 170 in en_core_web_sm
-// uses TAG: {NOT_IN: ["TO", ""]}).
-func extractNotInList(v any) ([]string, bool) {
-	d, ok := v.(map[string]any)
-	if !ok {
-		return nil, false
-	}
-	inAny, ok := d["NOT_IN"]
-	if !ok || len(d) != 1 {
-		return nil, false
-	}
-	list, ok := inAny.([]any)
-	if !ok {
-		return nil, false
-	}
-	out := make([]string, 0, len(list))
-	for _, x := range list {
-		s, ok := x.(string)
-		if !ok {
-			return nil, false
-		}
-		out = append(out, s)
-	}
-	return out, true
-}
+// extract{In,NotIn,Regex}List were moved to internal/patternspec in
+// v3.8.14-port.2 so the public matcher package could reuse them. The
+// var aliases below preserve the existing call sites in this file
+// without further churn.
+var (
+	extractInList      = patternspec.ExtractInList
+	extractNotInList   = patternspec.ExtractNotInList
+	extractRegexString = patternspec.ExtractRegexString
+)
 
 // loadAttributeRulerPatterns reads the msgpack list. Each entry is
 //

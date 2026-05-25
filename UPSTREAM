@@ -3,6 +3,6 @@ upstream_version: 3.8.14
 upstream_commit: 0069cf99b60023363ba5f47404819f59c8a39b3e
 upstream_url: https://github.com/explosion/spaCy/releases/tag/v3.8.14
 ported_at: 2026-05-21
-our_release: v3.8.14-port.1
+our_release: v3.8.14-port.2
 phase_7: complete (blocks A+B+C+D — helpers + perf + md/lg + NER)
 go_module_path: github.com/bioshock/gospacy/v3

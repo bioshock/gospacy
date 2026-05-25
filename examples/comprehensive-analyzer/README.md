@@ -30,19 +30,18 @@ testharness/.venv/bin/python -m spacy download en_core_web_md
 | 3 | Noun chunks | `Doc.NounChunks()` |
 | 4 | Dependency parsing | `Token.Dep` / `Token.Head` |
 | 5 | Sentence segmentation | `Doc.Sents()` (reads parser-set `SentStart`) |
-| 6 | Rule-based matching | **hand-rolled** — see below |
+| 6 | Rule-based matching | `matcher.New(vocab) + m.Add("KEY", []TokenSpec{...})` |
 | 7 | Document similarity | mean-pooled cosine over `vocab.Vectors().Row(tok.Lower)` |
 
-## Three places it diverges from Python spaCy
+## Two places it diverges from Python spaCy
 
-**`spacy.matcher.Matcher` isn't ported.** Listed in `NOT_YET_PORTED.md`
-along with `PhraseMatcher` and `EntityRuler`. The example shows the
-recommended workaround: pre-hash the literal strings via
-`StringStore.Hash` once, then compare `Token.Lower` directly in a
-linear scan. For the AI / Artificial-Intelligence pattern this is
-shorter than the Matcher syntax anyway. Implement a generic Matcher
-yourself if you need rich pattern semantics (operators, regex,
-quantifiers).
+**`spacy.matcher.Matcher` ships as Tier 1 only** — equality, set
+(`IN`/`NOT_IN`), and `REGEX` on LOWER. Quantifier OPs (`?` / `*` / `+`
+/ `!` / `{n,m}`), `PhraseMatcher`, and `FUZZY` are NOT_YET_PORTED. For
+the AI / Artificial-Intelligence pattern Tier 1 is plenty — the
+example expresses "optional Intelligence" as two alternatives under
+the same key, and same-key overlap dedup (longest-first) picks the
+longer match when both fire.
 
 **`Doc.similarity` isn't a method.** spaCy's default
 `doc1.similarity(doc2)` is "mean of per-token vectors, cosine". The
