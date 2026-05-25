@@ -20,9 +20,6 @@ testdata/golden/*-tokenizer-10k.json
 # Large per-op golden fixtures (regenerated via `make diff-test`).
 testdata/golden/ops-*.json
 
-# Tiny thinc model bytes — regenerable via dump_thinc_model.py
-testdata/golden/tiny_thinc_model.msgpack
-
 # Editor cruft
 .idea/
 .vscode/
